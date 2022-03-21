@@ -1,0 +1,27 @@
+
+#include <iostream>
+using namespace std;
+
+class Parent
+{
+public:
+    void print()
+    {
+        cout << "This is the function of the base class";
+    }
+};
+class Child: public Parent
+{
+public:
+    void print()
+    {
+        cout << "This is the function of the derived class";
+    }
+};
+
+int main()
+{
+    Child obj;
+    obj.print();
+    return 0;
+}
